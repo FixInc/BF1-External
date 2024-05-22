@@ -58,6 +58,8 @@ void Overlay::DestroyOverlay()
 
 void Overlay::OverlayManager()
 {
+	SetWindowDisplayAffinity (Hwnd . hwnd , WDA_EXCLUDEFROMCAPTURE ); 
+	
     while (g.Run)
     {
         // ゲームが実行されているかをチェックする
